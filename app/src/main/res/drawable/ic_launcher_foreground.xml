@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Center coordinate (54, 52), within 66dp safe zone (21 to 87) -->
+    
+    <!-- Outer Voice / Radar Pulse Waves -->
+    <path
+        android:pathData="M32,45 C32,32.85 41.85,23 54,23 C66.15,23 76,32.85 76,45"
+        android:strokeWidth="2.5"
+        android:strokeColor="#38BDF8"
+        android:strokeAlpha="0.6"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M26,45 C26,29.5 38.5,17 54,17 C69.5,17 82,29.5 82,45"
+        android:strokeWidth="2.0"
+        android:strokeColor="#0EA5E9"
+        android:strokeAlpha="0.35"
+        android:strokeLineCap="round" />
+
+    <!-- Main Location Marker Body with Vibrant Gradient -->
+    <path android:pathData="M54,27 C43.5,27 35,35.5 35,46 C35,58 52,77 54,79 C56,77 73,58 73,46 C73,35.5 64.5,27 54,27 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endX="73"
+                android:endY="79"
+                android:startX="35"
+                android:startY="27"
+                android:type="linear">
+                <item android:color="#38BDF8" android:offset="0.0" />
+                <item android:color="#0284C7" android:offset="0.5" />
+                <item android:color="#0369A1" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Location Inner White Circle Badge -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,46m-12,0a12,12 0 1,0 24,0a12,12 0 1,0 -24,0" />
+
+    <!-- Bold Checkmark inside Badge (Amber/Emerald Task Complete Accent) -->
+    <path
+        android:pathData="M47,46 L52,51 L61,41"
+        android:strokeWidth="3.2"
+        android:strokeColor="#0284C7"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Soundwave Voice Indicator at bottom right -->
+    <path
+        android:pathData="M70,68 L70,74 M74,65 L74,77 M78,69 L78,73"
+        android:strokeWidth="2.2"
+        android:strokeColor="#F59E0B"
+        android:strokeLineCap="round" />
+
+</vector>
